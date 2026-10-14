@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  list-style: none;
+}
+
+.item {
+  padding: 32px 28px 36px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background 0.3s;
+}
+
+.item:hover {
+  background: var(--surface);
+}
+
+.index {
+  font: 500 0.8rem var(--mono);
+  color: var(--accent);
+}
+
+.title {
+  margin: 28px 0 10px;
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.body {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}

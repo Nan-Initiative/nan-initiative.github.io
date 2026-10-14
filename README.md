@@ -1,6 +1,6 @@
-# NaN Initiative website
+# NaN website
 
-The website of the NaN Initiative, a collection of projects that rethink the foundations of computing for AI: the nan programming language and the NaNOS kernel and operating system. It is published at https://nan-initiative.github.io.
+The website of NaN, a set of projects that rebuild computing from zero for AI: the NaN language, NaN Kernel, NaNOS and the NaN Ecosystem. It is published at https://nan-initiative.github.io.
 
 ## Installation
 

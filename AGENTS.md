@@ -2,11 +2,11 @@
 
 ## Project
 
-The website of the NaN Initiative, served by GitHub Pages: a landing page presenting the initiative and its projects, the nan programming language and the NaNOS kernel and operating system.
+The website of NaN, served by GitHub Pages: a landing page that showcases the whole project, the NaN language, NaN Kernel, NaNOS and the NaN Ecosystem, and calls for contributors.
 
 ## Architecture
 
-A static single-page React app in TypeScript, built by Vite. `index.html` loads `src/main.tsx`, which mounts the React tree. The GitHub Actions workflow checks and builds every push and deploys `dist/` to GitHub Pages from `main`.
+A static single-page React app in TypeScript, built by Vite. `index.html` loads `src/main.tsx`, which mounts `App`, a column of page sections. Sections take their copy from `src/content.ts` and style themselves with CSS modules over the theme tokens in `src/styles/global.css`. The GitHub Actions workflow checks and builds every push and deploys `dist/` to GitHub Pages from `main`.
 
 Only what an agent needs to place a change correctly. The why is in ADRs.
 
@@ -15,6 +15,7 @@ Only what an agent needs to place a change correctly. The why is in ADRs.
 | Path                | Holds                                       |
 | ------------------- | ------------------------------------------- |
 | `src/`              | The site's source                           |
+| `public/`           | Files served as-is: favicon, social image   |
 | `tests/`            | Tests, mirroring `src/`, and the test setup |
 | `docs/decisions/`   | ADRs                                        |
 | `.github/workflows` | The check, build and deploy workflow        |
